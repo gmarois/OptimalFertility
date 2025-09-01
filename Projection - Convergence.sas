@@ -3,7 +3,7 @@ libname OF "H:\OptimalFertility\Convergence";
 
 
 PROC IMPORT OUT=of.lfp_rate 
-            DATAFILE='H:\OptimalFertility\Convergence\lfp_rate.csv'
+            DATAFILE='H:\OptimalFertility\Convergence\lfp_rate - convergence.csv'
             DBMS=csv REPLACE;
         GETNAMES=YES;
         guessingrows=100000;
@@ -438,3 +438,4 @@ RUN;
 proc glm data=of.charac;
 model optimalTFR=e0 /solution;
 run;
+
